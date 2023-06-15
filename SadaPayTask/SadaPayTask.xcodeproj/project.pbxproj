@@ -79,6 +79,7 @@
 		847E4BE62A3B7C60003B646B = {
 			isa = PBXGroup;
 			children = (
+				847E4C272A3BA450003B646B /* CoreNetworking */,
 				847E4BF12A3B7C60003B646B /* SadaPayTask */,
 				847E4C262A3B7E01003B646B /* UseCase */,
 				847E4C252A3B7DFC003B646B /* Repo */,
@@ -141,6 +142,21 @@
 			children = (
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		847E4C272A3BA450003B646B /* CoreNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				847E4C282A3BA46E003B646B /* CustomDecoder */,
+			);
+			path = CoreNetworking;
+			sourceTree = "<group>";
+		};
+		847E4C282A3BA46E003B646B /* CustomDecoder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomDecoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
