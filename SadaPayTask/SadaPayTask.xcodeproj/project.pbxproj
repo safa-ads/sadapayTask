@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		847E4BF32A3B7C60003B646B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4BF22A3B7C60003B646B /* AppDelegate.swift */; };
+		847E4BF72A3B7C60003B646B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4BF62A3B7C60003B646B /* ViewController.swift */; };
+		847E4BFA2A3B7C60003B646B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E4BF82A3B7C60003B646B /* Main.storyboard */; };
+		847E4BFD2A3B7C60003B646B /* SadaPayTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847E4BFB2A3B7C60003B646B /* SadaPayTask.xcdatamodeld */; };
+		847E4BFF2A3B7C62003B646B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847E4BFE2A3B7C62003B646B /* Assets.xcassets */; };
+		847E4C022A3B7C62003B646B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E4C002A3B7C62003B646B /* LaunchScreen.storyboard */; };
+		847E4C0D2A3B7C63003B646B /* SadaPayTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C0C2A3B7C63003B646B /* SadaPayTaskTests.swift */; };
+		847E4C172A3B7C63003B646B /* SadaPayTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C162A3B7C63003B646B /* SadaPayTaskUITests.swift */; };
+		847E4C192A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C182A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847E4C092A3B7C63003B646B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847E4BE72A3B7C60003B646B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847E4BEE2A3B7C60003B646B;
+			remoteInfo = SadaPayTask;
+		};
+		847E4C132A3B7C63003B646B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847E4BE72A3B7C60003B646B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847E4BEE2A3B7C60003B646B;
+			remoteInfo = SadaPayTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		847E4BEF2A3B7C60003B646B /* SadaPayTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPayTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847E4BF22A3B7C60003B646B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847E4BF62A3B7C60003B646B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847E4BF92A3B7C60003B646B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847E4BFC2A3B7C60003B646B /* SadaPayTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SadaPayTask.xcdatamodel; sourceTree = "<group>"; };
+		847E4BFE2A3B7C62003B646B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847E4C012A3B7C62003B646B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847E4C032A3B7C62003B646B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847E4C082A3B7C63003B646B /* SadaPayTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847E4C0C2A3B7C63003B646B /* SadaPayTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayTaskTests.swift; sourceTree = "<group>"; };
+		847E4C122A3B7C63003B646B /* SadaPayTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847E4C162A3B7C63003B646B /* SadaPayTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayTaskUITests.swift; sourceTree = "<group>"; };
+		847E4C182A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847E4BEC2A3B7C60003B646B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847E4C052A3B7C63003B646B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847E4C0F2A3B7C63003B646B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847E4BE62A3B7C60003B646B = {
+			isa = PBXGroup;
+			children = (
+				847E4BF12A3B7C60003B646B /* SadaPayTask */,
+				847E4C0B2A3B7C63003B646B /* SadaPayTaskTests */,
+				847E4C152A3B7C63003B646B /* SadaPayTaskUITests */,
+				847E4BF02A3B7C60003B646B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847E4BF02A3B7C60003B646B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847E4BEF2A3B7C60003B646B /* SadaPayTask.app */,
+				847E4C082A3B7C63003B646B /* SadaPayTaskTests.xctest */,
+				847E4C122A3B7C63003B646B /* SadaPayTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847E4BF12A3B7C60003B646B /* SadaPayTask */ = {
+			isa = PBXGroup;
+			children = (
+				847E4BF22A3B7C60003B646B /* AppDelegate.swift */,
+				847E4BF62A3B7C60003B646B /* ViewController.swift */,
+				847E4BF82A3B7C60003B646B /* Main.storyboard */,
+				847E4BFE2A3B7C62003B646B /* Assets.xcassets */,
+				847E4C002A3B7C62003B646B /* LaunchScreen.storyboard */,
+				847E4C032A3B7C62003B646B /* Info.plist */,
+				847E4BFB2A3B7C60003B646B /* SadaPayTask.xcdatamodeld */,
+			);
+			path = SadaPayTask;
+			sourceTree = "<group>";
+		};
+		847E4C0B2A3B7C63003B646B /* SadaPayTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				847E4C0C2A3B7C63003B646B /* SadaPayTaskTests.swift */,
+			);
+			path = SadaPayTaskTests;
+			sourceTree = "<group>";
+		};
+		847E4C152A3B7C63003B646B /* SadaPayTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				847E4C162A3B7C63003B646B /* SadaPayTaskUITests.swift */,
+				847E4C182A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift */,
+			);
+			path = SadaPayTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847E4BEE2A3B7C60003B646B /* SadaPayTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847E4C1C2A3B7C63003B646B /* Build configuration list for PBXNativeTarget "SadaPayTask" */;
+			buildPhases = (
+				847E4BEB2A3B7C60003B646B /* Sources */,
+				847E4BEC2A3B7C60003B646B /* Frameworks */,
+				847E4BED2A3B7C60003B646B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SadaPayTask;
+			productName = SadaPayTask;
+			productReference = 847E4BEF2A3B7C60003B646B /* SadaPayTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847E4C072A3B7C63003B646B /* SadaPayTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847E4C1F2A3B7C63003B646B /* Build configuration list for PBXNativeTarget "SadaPayTaskTests" */;
+			buildPhases = (
+				847E4C042A3B7C63003B646B /* Sources */,
+				847E4C052A3B7C63003B646B /* Frameworks */,
+				847E4C062A3B7C63003B646B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847E4C0A2A3B7C63003B646B /* PBXTargetDependency */,
+			);
+			name = SadaPayTaskTests;
+			productName = SadaPayTaskTests;
+			productReference = 847E4C082A3B7C63003B646B /* SadaPayTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		847E4C112A3B7C63003B646B /* SadaPayTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847E4C222A3B7C63003B646B /* Build configuration list for PBXNativeTarget "SadaPayTaskUITests" */;
+			buildPhases = (
+				847E4C0E2A3B7C63003B646B /* Sources */,
+				847E4C0F2A3B7C63003B646B /* Frameworks */,
+				847E4C102A3B7C63003B646B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847E4C142A3B7C63003B646B /* PBXTargetDependency */,
+			);
+			name = SadaPayTaskUITests;
+			productName = SadaPayTaskUITests;
+			productReference = 847E4C122A3B7C63003B646B /* SadaPayTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847E4BE72A3B7C60003B646B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					847E4BEE2A3B7C60003B646B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					847E4C072A3B7C63003B646B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 847E4BEE2A3B7C60003B646B;
+					};
+					847E4C112A3B7C63003B646B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 847E4BEE2A3B7C60003B646B;
+					};
+				};
+			};
+			buildConfigurationList = 847E4BEA2A3B7C60003B646B /* Build configuration list for PBXProject "SadaPayTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847E4BE62A3B7C60003B646B;
+			productRefGroup = 847E4BF02A3B7C60003B646B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847E4BEE2A3B7C60003B646B /* SadaPayTask */,
+				847E4C072A3B7C63003B646B /* SadaPayTaskTests */,
+				847E4C112A3B7C63003B646B /* SadaPayTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847E4BED2A3B7C60003B646B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847E4C022A3B7C62003B646B /* LaunchScreen.storyboard in Resources */,
+				847E4BFF2A3B7C62003B646B /* Assets.xcassets in Resources */,
+				847E4BFA2A3B7C60003B646B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847E4C062A3B7C63003B646B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847E4C102A3B7C63003B646B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847E4BEB2A3B7C60003B646B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847E4BF72A3B7C60003B646B /* ViewController.swift in Sources */,
+				847E4BF32A3B7C60003B646B /* AppDelegate.swift in Sources */,
+				847E4BFD2A3B7C60003B646B /* SadaPayTask.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847E4C042A3B7C63003B646B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847E4C0D2A3B7C63003B646B /* SadaPayTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847E4C0E2A3B7C63003B646B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847E4C172A3B7C63003B646B /* SadaPayTaskUITests.swift in Sources */,
+				847E4C192A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847E4C0A2A3B7C63003B646B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847E4BEE2A3B7C60003B646B /* SadaPayTask */;
+			targetProxy = 847E4C092A3B7C63003B646B /* PBXContainerItemProxy */;
+		};
+		847E4C142A3B7C63003B646B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847E4BEE2A3B7C60003B646B /* SadaPayTask */;
+			targetProxy = 847E4C132A3B7C63003B646B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847E4BF82A3B7C60003B646B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847E4BF92A3B7C60003B646B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		847E4C002A3B7C62003B646B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847E4C012A3B7C62003B646B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847E4C1A2A3B7C63003B646B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847E4C1B2A3B7C63003B646B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847E4C1D2A3B7C63003B646B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Q6XV32V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SadaPayTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ContainerView.SadaPayTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		847E4C1E2A3B7C63003B646B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Q6XV32V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SadaPayTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ContainerView.SadaPayTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		847E4C202A3B7C63003B646B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Q6XV32V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ContainerView.SadaPayTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadaPayTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SadaPayTask";
+			};
+			name = Debug;
+		};
+		847E4C212A3B7C63003B646B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Q6XV32V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ContainerView.SadaPayTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadaPayTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SadaPayTask";
+			};
+			name = Release;
+		};
+		847E4C232A3B7C63003B646B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Q6XV32V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ContainerView.SadaPayTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SadaPayTask;
+			};
+			name = Debug;
+		};
+		847E4C242A3B7C63003B646B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Q6XV32V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ContainerView.SadaPayTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SadaPayTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847E4BEA2A3B7C60003B646B /* Build configuration list for PBXProject "SadaPayTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847E4C1A2A3B7C63003B646B /* Debug */,
+				847E4C1B2A3B7C63003B646B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847E4C1C2A3B7C63003B646B /* Build configuration list for PBXNativeTarget "SadaPayTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847E4C1D2A3B7C63003B646B /* Debug */,
+				847E4C1E2A3B7C63003B646B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847E4C1F2A3B7C63003B646B /* Build configuration list for PBXNativeTarget "SadaPayTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847E4C202A3B7C63003B646B /* Debug */,
+				847E4C212A3B7C63003B646B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847E4C222A3B7C63003B646B /* Build configuration list for PBXNativeTarget "SadaPayTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847E4C232A3B7C63003B646B /* Debug */,
+				847E4C242A3B7C63003B646B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		847E4BFB2A3B7C60003B646B /* SadaPayTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				847E4BFC2A3B7C60003B646B /* SadaPayTask.xcdatamodel */,
+			);
+			currentVersion = 847E4BFC2A3B7C60003B646B /* SadaPayTask.xcdatamodel */;
+			path = SadaPayTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 847E4BE72A3B7C60003B646B /* Project object */;
+}
