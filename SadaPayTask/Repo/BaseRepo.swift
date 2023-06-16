@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol BaseRepoProtocol {
-    func getData<T: Codable>(urlRequest: URLRequest,
+    func getData<T: Codable>(endpoint: EndpointProtocol,
                              completion:  @escaping (Result<T, Error>) -> Void)
 }
 
@@ -18,9 +18,9 @@ public class BaseRepo: BaseRepoProtocol {
         self.remote = remote
     }
     
-    public func getData<T: Codable>(urlRequest: URLRequest,
+    public func getData<T: Codable>(endpoint: EndpointProtocol,
                                     completion:  @escaping (Result<T, Error>) -> Void) {
-        remote.getData(urlRequest: urlRequest,
+        remote.getData(endpoint: endpoint,
                        completion: completion)
     }
 }

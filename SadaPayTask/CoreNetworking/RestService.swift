@@ -10,7 +10,7 @@ import Foundation
 // MARK: - RestServiceProtocol
 
 public protocol RestServiceProtocol {
-    func request<T:Codable>(urlRequest: URLRequest,
+    func request<T:Codable>(endpoint: EndpointProtocol,
                             completion: @escaping (Result<T, Error>) -> Void)
 }
 
@@ -22,9 +22,10 @@ public class RestService: RestServiceProtocol {
       self.urlSession = urlSession
     }
     
-    public func request<T:Codable>(urlRequest: URLRequest,
+    public func request<T:Codable>(endpoint: EndpointProtocol,
                                    completion: @escaping (Result<T, Error>) -> Void) {
         
+        guard let urlRequest = endpoint.urlRequest else { return }
         let task = urlSession.dataTask(with: urlRequest) { data, response, error in
             if let data {
                 do {

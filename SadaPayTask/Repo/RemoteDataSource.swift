@@ -16,7 +16,7 @@ public class RemoteDataSource: RemoteDataSourceProtocol {
         self.remoteService = remoteService
     }
     
-    public func getData<T:Codable>(urlRequest: URLRequest, completion: @escaping (Result<T, Error>) -> Void)  {
-        remoteService.request(urlRequest: urlRequest, completion: completion)
+    public func getData<T:Codable>(endpoint: EndpointProtocol, completion: @escaping (Result<T, Error>) -> Void)  {
+        remoteService.request(endpoint: endpoint, completion: completion)
     }
 }
