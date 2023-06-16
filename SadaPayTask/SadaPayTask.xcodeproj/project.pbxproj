@@ -16,6 +16,13 @@
 		847E4C0D2A3B7C63003B646B /* SadaPayTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C0C2A3B7C63003B646B /* SadaPayTaskTests.swift */; };
 		847E4C172A3B7C63003B646B /* SadaPayTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C162A3B7C63003B646B /* SadaPayTaskUITests.swift */; };
 		847E4C192A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C182A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift */; };
+		847E4C2A2A3BA4B0003B646B /* CustomDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C292A3BA4B0003B646B /* CustomDecoder.swift */; };
+		847E4C2C2A3BA4D2003B646B /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C2B2A3BA4D2003B646B /* RestService.swift */; };
+		847E4C2E2A3BB094003B646B /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C2D2A3BB094003B646B /* DataSourceProtocol.swift */; };
+		847E4C302A3BB0A2003B646B /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C2F2A3BB0A2003B646B /* RemoteDataSource.swift */; };
+		847E4C322A3BB0AF003B646B /* BaseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C312A3BB0AF003B646B /* BaseRepo.swift */; };
+		847E4C342A3BB0D8003B646B /* GithubRepositoriesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C332A3BB0D8003B646B /* GithubRepositoriesRepo.swift */; };
+		847E4C3B2A3C9DAB003B646B /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C3A2A3C9DAB003B646B /* GitHubRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		847E4C122A3B7C63003B646B /* SadaPayTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847E4C162A3B7C63003B646B /* SadaPayTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayTaskUITests.swift; sourceTree = "<group>"; };
 		847E4C182A3B7C63003B646B /* SadaPayTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		847E4C292A3BA4B0003B646B /* CustomDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecoder.swift; sourceTree = "<group>"; };
+		847E4C2B2A3BA4D2003B646B /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		847E4C2D2A3BB094003B646B /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
+		847E4C2F2A3BB0A2003B646B /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		847E4C312A3BB0AF003B646B /* BaseRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepo.swift; sourceTree = "<group>"; };
+		847E4C332A3BB0D8003B646B /* GithubRepositoriesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesRepo.swift; sourceTree = "<group>"; };
+		847E4C3A2A3C9DAB003B646B /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 		847E4BE62A3B7C60003B646B = {
 			isa = PBXGroup;
 			children = (
+				847E4C392A3C9D9E003B646B /* Models */,
 				847E4C272A3BA450003B646B /* CoreNetworking */,
 				847E4BF12A3B7C60003B646B /* SadaPayTask */,
 				847E4C262A3B7E01003B646B /* UseCase */,
@@ -133,6 +148,10 @@
 		847E4C252A3B7DFC003B646B /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				847E4C312A3BB0AF003B646B /* BaseRepo.swift */,
+				847E4C332A3BB0D8003B646B /* GithubRepositoriesRepo.swift */,
+				847E4C2D2A3BB094003B646B /* DataSourceProtocol.swift */,
+				847E4C2F2A3BB0A2003B646B /* RemoteDataSource.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -147,16 +166,18 @@
 		847E4C272A3BA450003B646B /* CoreNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				847E4C282A3BA46E003B646B /* CustomDecoder */,
+				847E4C292A3BA4B0003B646B /* CustomDecoder.swift */,
+				847E4C2B2A3BA4D2003B646B /* RestService.swift */,
 			);
 			path = CoreNetworking;
 			sourceTree = "<group>";
 		};
-		847E4C282A3BA46E003B646B /* CustomDecoder */ = {
+		847E4C392A3C9D9E003B646B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				847E4C3A2A3C9DAB003B646B /* GitHubRepository.swift */,
 			);
-			path = CustomDecoder;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847E4C2E2A3BB094003B646B /* DataSourceProtocol.swift in Sources */,
+				847E4C342A3BB0D8003B646B /* GithubRepositoriesRepo.swift in Sources */,
+				847E4C302A3BB0A2003B646B /* RemoteDataSource.swift in Sources */,
+				847E4C322A3BB0AF003B646B /* BaseRepo.swift in Sources */,
 				847E4BF72A3B7C60003B646B /* ViewController.swift in Sources */,
 				847E4BF32A3B7C60003B646B /* AppDelegate.swift in Sources */,
 				847E4BFD2A3B7C60003B646B /* SadaPayTask.xcdatamodeld in Sources */,
+				847E4C2A2A3BA4B0003B646B /* CustomDecoder.swift in Sources */,
+				847E4C2C2A3BA4D2003B646B /* RestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847E4C3B2A3C9DAB003B646B /* GitHubRepository.swift in Sources */,
 				847E4C0D2A3B7C63003B646B /* SadaPayTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
