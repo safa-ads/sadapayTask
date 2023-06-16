@@ -26,7 +26,3 @@ final class RemoteDataSourceSpy<T: Codable>: RemoteDataSourceProtocol {
         }
     }
 }
-
-enum RemoteDataSourceErrors: Error, Equatable {
-  case testingError
-}

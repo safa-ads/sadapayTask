@@ -9,14 +9,14 @@ import XCTest
 @testable import SadaPayTask
 
 final class GithubRepositoriesUseCaseUnitTests: XCTestCase {
-    private var githubRepositoriesRepo: GithubRepositoriesRepoStub!
+    private var githubRepositoriesRepo: GithubRepositoriesRepoSpy!
     private var sut: GithubRepositoriesUseCase!
 
     
     //MARK: - Life Sycle
     override func setUp() {
         super.setUp()
-        githubRepositoriesRepo = GithubRepositoriesRepoStub()
+        githubRepositoriesRepo = GithubRepositoriesRepoSpy()
         sut = GithubRepositoriesUseCase(repo: githubRepositoriesRepo)
     }
     
@@ -46,11 +46,35 @@ final class GithubRepositoriesUseCaseUnitTests: XCTestCase {
         XCTAssertEqual(tempResponse?.items.first?.language, response.items.first?.language)
         XCTAssertEqual(tempResponse?.items.first?.description, response.items.first?.description)
     }
+    
+    func testGithubRepositoriesUsecase_getRepositories_OnFailure() {
+        //Given
+        githubRepositoriesRepo.shouldSucceed = false
+        
+        //When
+        var error: TestingErrors?
+        sut.getRepositories { response in
+            switch response {
+            case .success:
+                break
+            case .failure(let value):
+                error = value as? TestingErrors
+            }
+        }
+        
+        //Then
+        XCTAssertEqual(error, TestingErrors.testingError)
+    }
 }
 
-class GithubRepositoriesRepoStub: GithubRepositoriesRepoProtocol {
+class GithubRepositoriesRepoSpy: GithubRepositoriesRepoProtocol {
+    var shouldSucceed = true
     func getRepositories(completion: @escaping (Result<SadaPayTask.GitHubRepository, Error>) -> Void) {
-        completion(.success(.stub()))
+        if shouldSucceed {
+            completion(.success(.stub()))
+        } else {
+            completion(.failure(TestingErrors.testingError))
+        }
     }
 }
 

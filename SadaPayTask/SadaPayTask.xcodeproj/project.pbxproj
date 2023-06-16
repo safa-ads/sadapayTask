@@ -30,6 +30,7 @@
 		84D839182A3CEE0700B2322B /* GithubRepositoryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D839132A3CEC4D00B2322B /* GithubRepositoryEndpoint.swift */; };
 		84D8391B2A3CF09000B2322B /* GithubRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D839192A3CF07C00B2322B /* GithubRepositoriesUseCase.swift */; };
 		84D8391E2A3CF0EB00B2322B /* GithubRepositoriesUseCaseUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8391D2A3CF0EB00B2322B /* GithubRepositoriesUseCaseUnitTests.swift */; };
+		84D839202A3CF57100B2322B /* TestingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8391F2A3CF57100B2322B /* TestingErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		84D839132A3CEC4D00B2322B /* GithubRepositoryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryEndpoint.swift; sourceTree = "<group>"; };
 		84D839192A3CF07C00B2322B /* GithubRepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesUseCase.swift; sourceTree = "<group>"; };
 		84D8391D2A3CF0EB00B2322B /* GithubRepositoriesUseCaseUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesUseCaseUnitTests.swift; sourceTree = "<group>"; };
+		84D8391F2A3CF57100B2322B /* TestingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				84D8391C2A3CF0D100B2322B /* UseCase */,
 				84D8390D2A3CE9E300B2322B /* Stubs */,
+				84D8391F2A3CF57100B2322B /* TestingErrors.swift */,
 				847E4C0C2A3B7C63003B646B /* SadaPayTaskTests.swift */,
 				84D839092A3CE89700B2322B /* GithubRepositoriesRepoTests.swift */,
 				84D8390B2A3CE8EE00B2322B /* RemoteDataSourceSpy.swift */,
@@ -377,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D8390F2A3CE9FC00B2322B /* GithubRepository+Stub.swift in Sources */,
+				84D839202A3CF57100B2322B /* TestingErrors.swift in Sources */,
 				847E4C0D2A3B7C63003B646B /* SadaPayTaskTests.swift in Sources */,
 				84D8391E2A3CF0EB00B2322B /* GithubRepositoriesUseCaseUnitTests.swift in Sources */,
 				84D8390A2A3CE89700B2322B /* GithubRepositoriesRepoTests.swift in Sources */,

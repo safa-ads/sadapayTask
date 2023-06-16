@@ -42,22 +42,22 @@ final class GithubRepositoriesRepoTests: XCTestCase {
         // Given
         let remoteDataSource =  RemoteDataSourceSpy<GitHubRepository>()
         sut = GithubRepositoriesRepo(repo: .init(remote: remoteDataSource))
-        remoteDataSource.response = .failure(RemoteDataSourceErrors.testingError)
+        remoteDataSource.response = .failure(TestingErrors.testingError)
 
         // When
-        var tempResponse: RemoteDataSourceErrors?
+        var tempResponse: TestingErrors?
         
         sut.getRepositories { response in
             switch response {
             case .failure(let error):
-                tempResponse = error as? RemoteDataSourceErrors
+                tempResponse = error as? TestingErrors
             default:
                 break
             }
         }
 
         // Then
-        XCTAssertEqual(tempResponse, RemoteDataSourceErrors.testingError)
+        XCTAssertEqual(tempResponse, TestingErrors.testingError)
     }
 }
 
