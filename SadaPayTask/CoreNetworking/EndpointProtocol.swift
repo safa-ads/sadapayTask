@@ -13,7 +13,7 @@ public protocol EndpointProtocol {
 
 public extension EndpointProtocol {
     var urlRequest: URLRequest? {
-        var urlRequest = URLRequest(url: URL(string: url)!)
+        let urlRequest = URLRequest(url: URL(string: url)!)
         return urlRequest
     }
 }
