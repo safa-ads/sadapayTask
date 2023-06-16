@@ -37,5 +37,27 @@ final class GithubRepositoriesRepoTests: XCTestCase {
         XCTAssertEqual(tempResponse?.items.first?.language, mockedResponse.items.first?.language)
         XCTAssertEqual(tempResponse?.items.first?.description, mockedResponse.items.first?.description)
     }
+    
+    func testGithubRepositoriesRepo_GetRepositories_OnFailure() {
+        // Given
+        let remoteDataSource =  RemoteDataSourceSpy<GitHubRepository>()
+        sut = GithubRepositoriesRepo(repo: .init(remote: remoteDataSource))
+        remoteDataSource.response = .failure(RemoteDataSourceErrors.testingError)
+
+        // When
+        var tempResponse: RemoteDataSourceErrors?
+        
+        sut.getRepositories { response in
+            switch response {
+            case .failure(let error):
+                tempResponse = error as? RemoteDataSourceErrors
+            default:
+                break
+            }
+        }
+
+        // Then
+        XCTAssertEqual(tempResponse, RemoteDataSourceErrors.testingError)
+    }
 }
 
