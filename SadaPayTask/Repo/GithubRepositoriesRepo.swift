@@ -8,6 +8,7 @@
 import Foundation
 
 public protocol GithubRepositoriesRepoProtocol {
+    func getRepositories(completion: @escaping (Result<GitHubRepository, Error>) -> Void)
 }
 
 public class GithubRepositoriesRepo: GithubRepositoriesRepoProtocol {
@@ -17,5 +18,11 @@ public class GithubRepositoriesRepo: GithubRepositoriesRepoProtocol {
     }
     
     
+    public func getRepositories(completion: @escaping (Result<GitHubRepository, Error>) -> Void) {
+        let endpoint = GithubRepositoryEndpoints.getRepositories
+        repo.getData(endpoint: endpoint) { response in
+            completion(response)
+        }
+    }
 }
 

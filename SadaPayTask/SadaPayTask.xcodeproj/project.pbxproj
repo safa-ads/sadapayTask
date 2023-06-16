@@ -22,12 +22,12 @@
 		847E4C302A3BB0A2003B646B /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C2F2A3BB0A2003B646B /* RemoteDataSource.swift */; };
 		847E4C322A3BB0AF003B646B /* BaseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C312A3BB0AF003B646B /* BaseRepo.swift */; };
 		847E4C342A3BB0D8003B646B /* GithubRepositoriesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C332A3BB0D8003B646B /* GithubRepositoriesRepo.swift */; };
-		847E4C3B2A3C9DAB003B646B /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C3A2A3C9DAB003B646B /* GitHubRepository.swift */; };
 		84D8390A2A3CE89700B2322B /* GithubRepositoriesRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D839092A3CE89700B2322B /* GithubRepositoriesRepoTests.swift */; };
 		84D8390C2A3CE8EE00B2322B /* RemoteDataSourceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8390B2A3CE8EE00B2322B /* RemoteDataSourceSpy.swift */; };
 		84D8390F2A3CE9FC00B2322B /* GithubRepository+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8390E2A3CE9FC00B2322B /* GithubRepository+Stub.swift */; };
-		84D839142A3CEC4D00B2322B /* GithubRepositoryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D839132A3CEC4D00B2322B /* GithubRepositoryEndpoint.swift */; };
 		84D839162A3CECE300B2322B /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D839102A3CEC1800B2322B /* EndpointProtocol.swift */; };
+		84D839172A3CEDE500B2322B /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4C3A2A3C9DAB003B646B /* GitHubRepository.swift */; };
+		84D839182A3CEE0700B2322B /* GithubRepositoryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D839132A3CEC4D00B2322B /* GithubRepositoryEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,11 +103,11 @@
 		847E4BE62A3B7C60003B646B = {
 			isa = PBXGroup;
 			children = (
-				84D839122A3CEC3E00B2322B /* APIs */,
 				847E4C272A3BA450003B646B /* CoreNetworking */,
 				847E4BF12A3B7C60003B646B /* SadaPayTask */,
 				847E4C262A3B7E01003B646B /* UseCase */,
 				847E4C252A3B7DFC003B646B /* Repo */,
+				84D839122A3CEC3E00B2322B /* APIs */,
 				847E4C392A3C9D9E003B646B /* Models */,
 				847E4C0B2A3B7C63003B646B /* SadaPayTaskTests */,
 				847E4C152A3B7C63003B646B /* SadaPayTaskUITests */,
@@ -342,10 +342,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D839172A3CEDE500B2322B /* GitHubRepository.swift in Sources */,
 				847E4C2E2A3BB094003B646B /* DataSourceProtocol.swift in Sources */,
 				847E4C342A3BB0D8003B646B /* GithubRepositoriesRepo.swift in Sources */,
 				84D839162A3CECE300B2322B /* EndpointProtocol.swift in Sources */,
 				847E4C302A3BB0A2003B646B /* RemoteDataSource.swift in Sources */,
+				84D839182A3CEE0700B2322B /* GithubRepositoryEndpoint.swift in Sources */,
 				847E4C322A3BB0AF003B646B /* BaseRepo.swift in Sources */,
 				847E4BF72A3B7C60003B646B /* ViewController.swift in Sources */,
 				847E4BF32A3B7C60003B646B /* AppDelegate.swift in Sources */,
@@ -359,11 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847E4C3B2A3C9DAB003B646B /* GitHubRepository.swift in Sources */,
 				84D8390F2A3CE9FC00B2322B /* GithubRepository+Stub.swift in Sources */,
 				847E4C0D2A3B7C63003B646B /* SadaPayTaskTests.swift in Sources */,
 				84D8390A2A3CE89700B2322B /* GithubRepositoriesRepoTests.swift in Sources */,
-				84D839142A3CEC4D00B2322B /* GithubRepositoryEndpoint.swift in Sources */,
 				84D8390C2A3CE8EE00B2322B /* RemoteDataSourceSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
