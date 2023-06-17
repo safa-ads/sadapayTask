@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'SadaPayTask' do
+  use_frameworks!
+  pod 'RxSwift', '6.6.0'
+  pod 'RxCocoa', '6.6.0'
+  # Pods for SadaPayTask
+
+  target 'SadaPayTaskTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SadaPayTaskUITests' do
+    # Pods for testing
+  end
+
+end
