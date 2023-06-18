@@ -20,6 +20,7 @@ class GithubRepositoriesViewModel: GithubRepositoriesViewModelProtocol {
     }
     
     func getRepositories() {
+        states.onNext(.loading)
         useCase.getRepositories { [weak self] response in
             switch response {
             case .success(let value):

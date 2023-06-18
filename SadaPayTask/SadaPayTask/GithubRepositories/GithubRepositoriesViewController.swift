@@ -56,6 +56,7 @@ private extension GithubRepositoriesViewController {
     
     @objc func refresh(_ sender: AnyObject) {
         viewModel?.getRepositories()
+        refreshControl.endRefreshing()
     }
     
     func configureTableView() {
