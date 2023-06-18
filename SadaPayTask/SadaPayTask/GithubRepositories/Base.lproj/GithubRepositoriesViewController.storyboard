@@ -12,14 +12,29 @@
         <!--Github Repositories View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GithubRepositoriesViewController" customModule="SadaPayTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GithubRepositoriesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="GithubRepositoriesViewController" customModule="SadaPayTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Exw-RF-CC6">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Exw-RF-CC6" secondAttribute="bottom" id="SEf-Vt-MOP"/>
+                            <constraint firstItem="Exw-RF-CC6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zyc-Vg-XXz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Exw-RF-CC6" secondAttribute="trailing" id="t5B-os-mEP"/>
+                            <constraint firstItem="Exw-RF-CC6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v6U-Ov-srZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Pq-HA-4Hs"/>
+                    <connections>
+                        <outlet property="tableView" destination="Exw-RF-CC6" id="6o5-15-cWW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,6 +43,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zC9-EP-ayN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tg-Sj-WHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fTP-er-eUD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dlJ-MM-mfk">
@@ -39,7 +55,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lg8-mR-6CA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5tg-Sj-WHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-25.190839694656489" y="3.5211267605633805"/>
         </scene>

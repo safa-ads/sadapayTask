@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "87142B6B-8603-47D4-A264-E66134E89F7A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB076BC7-CE1F-4484-A908-4C66A9B9D054"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E48DF199-4098-4B93-9087-19961A39D038"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "init?(coder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7F5208E-C1F8-4F13-BB4B-1CAAD4CD6CC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BEAD4EE-37EB-4BF0-85C7-C24C1C04C2BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SadaPayTaskTests/Scene/GithubRepositoriesViewControllerUnitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getRepositories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BEAD4EE-37EB-4BF0-85C7-C24C1C04C2BF - f0a8e190d6232a5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SadaPayTaskTests.GithubRepositoriesViewModelSpy.getRepositories() -&gt; ()"
+                  moduleName = "SadaPayTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/safaads/Desktop/SadaPayTask/sadapayTask/SadaPayTask/SadaPayTaskTests/Scene/GithubRepositoriesViewControllerUnitTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5BEAD4EE-37EB-4BF0-85C7-C24C1C04C2BF - f0a8e190d62354ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SadaPayTaskTests.GithubRepositoriesViewModelSpy.getRepositories() -&gt; ()"
+                  moduleName = "SadaPayTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/safaads/Desktop/SadaPayTask/sadapayTask/SadaPayTask/SadaPayTaskTests/Scene/GithubRepositoriesViewControllerUnitTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

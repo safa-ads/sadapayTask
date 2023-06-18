@@ -11,4 +11,10 @@ enum GithubRepositoriesScene {
         case loaded(data: GitHubRepository)
         case error
     }
+    
+    enum Constants { }
+}
+
+extension GithubRepositoriesScene.Constants {
+    static let shimmeringCount = 20
 }

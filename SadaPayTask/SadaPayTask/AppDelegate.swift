@@ -14,7 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "GithubRepositoriesViewController", bundle:  nil)
+       let viewController = storyboard.instantiateViewController(withIdentifier: "GithubRepositoriesViewController") as! GithubRepositoriesViewController
+        viewController.viewModel = GithubRepositoriesViewModel()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
         return true
     }
 }
