@@ -17,6 +17,7 @@ class GithubRepositoriesViewController: UIViewController {
     var viewModel: GithubRepositoriesViewModelProtocol?
     private var state: GithubRepositoriesScene.State?
     private let disposeBag = DisposeBag()
+    var errorView: GithubRepositoriesErrorView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
