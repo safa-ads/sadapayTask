@@ -18,7 +18,6 @@ class GithubRepositoriesViewController: UIViewController {
     private var state: GithubRepositoriesScene.State?
     private let disposeBag = DisposeBag()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewModel()
@@ -30,11 +29,20 @@ class GithubRepositoriesViewController: UIViewController {
 
 //MARK: - Helpers
 private extension GithubRepositoriesViewController {
-     func configureViewModel() {
-        viewModel?.states.observe(on: MainScheduler.instance).subscribe({ [weak self] state in
-            self?.state = state.element
-        }).disposed(by: disposeBag)
-    }
+    func configureViewModel() {
+       viewModel?.states.observe(on: MainScheduler.instance).subscribe({ [weak self] state in
+           self?.state = state.element
+           
+           switch state.element! {
+           case .loading, .loaded:
+               self?.tableView.isHidden = false
+               self?.tableView.reloadData()
+           case .error:
+               self?.tableView.isHidden = true
+           }
+       }).disposed(by: disposeBag)
+       
+   }
     
     func configureTableView() {
             tableView.register(UINib(nibName: "GitHubRepositoriesTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GitHubRepositoriesTableViewCell.self))
