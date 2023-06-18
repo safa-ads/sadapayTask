@@ -35,6 +35,30 @@ final class GithubRepositoriesViewControllerUnitTests: XCTestCase {
         //Then
         XCTAssertEqual(viewModel.getRepositoriesCallCount, 1)
     }
+    
+    func testTableView_ShouldBeShown_LoadingState() {
+        //When
+        viewModel.states.on(.next(.loading))
+        
+        //Then
+        XCTAssertFalse(sut.tableView.isHidden)
+    }
+    
+    func testTableView_ShouldBeHidden_ErrorState() {
+        //When
+        viewModel.states.on(.next(.error))
+        
+        //Then
+        XCTAssertTrue(sut.tableView.isHidden)
+    }
+    
+    func testTableView_ShouldBeShown_LoadedState() {
+        //When
+        viewModel.states.on(.next(.loaded(data: .stub())))
+        
+        //Then
+        XCTAssertFalse(sut.tableView.isHidden)
+    }
 }
 
 class GithubRepositoriesViewModelSpy: GithubRepositoriesViewModelProtocol {
