@@ -18,12 +18,14 @@ class GithubRepositoriesViewController: UIViewController {
     private var state: GithubRepositoriesScene.State?
     private let disposeBag = DisposeBag()
     var errorView: GithubRepositoriesErrorView?
+    let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewModel()
         setupNavigationControllerTitle()
         configureTableView()
+        configurePullToRefresh()
         viewModel?.getRepositories()
     }
 }
@@ -45,6 +47,15 @@ private extension GithubRepositoriesViewController {
             }
         }).disposed(by: disposeBag)
         
+    }
+    
+    func configurePullToRefresh() {
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        viewModel?.getRepositories()
     }
     
     func configureTableView() {
