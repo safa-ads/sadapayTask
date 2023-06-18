@@ -22,6 +22,8 @@ class GithubRepositoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewModel()
+        setupNavigationControllerTitle()
+        configureTableView()
         viewModel?.getRepositories()
     }
 }
@@ -32,10 +34,43 @@ private extension GithubRepositoriesViewController {
         viewModel?.states.observe(on: MainScheduler.instance).subscribe({ [weak self] state in
             self?.state = state.element
         }).disposed(by: disposeBag)
-        
     }
+    
+    func configureTableView() {
+            tableView.register(UINib(nibName: "GitHubRepositoriesTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GitHubRepositoriesTableViewCell.self))
+            
+            tableView.dataSource = self
+        }
 
     func setupNavigationControllerTitle() {
         self.title = "Trending"
+    }
+}
+
+extension GithubRepositoriesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let state else { return UITableViewCell() }
+        let cell: GitHubRepositoriesTableViewCell = tableView.dequeueReusableCell(withIdentifier: "GitHubRepositoriesTableViewCell") as! GitHubRepositoriesTableViewCell
+        switch state {
+        case .loaded(let data):
+            cell.configureView(data.items[indexPath.row])
+            return cell
+        case .loading:
+            cell.configureSkeleton()
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch state {
+        case .loaded(let data):
+            return data.items.count
+        case .loading:
+            return  GithubRepositoriesScene.Constants.shimmeringCount
+        default:
+            return 0
+        }
     }
 }

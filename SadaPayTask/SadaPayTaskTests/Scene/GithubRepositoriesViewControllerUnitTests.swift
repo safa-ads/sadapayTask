@@ -35,8 +35,6 @@ final class GithubRepositoriesViewControllerUnitTests: XCTestCase {
         //Then
         XCTAssertEqual(viewModel.getRepositoriesCallCount, 1)
     }
-    
-    
 }
 
 class GithubRepositoriesViewModelSpy: GithubRepositoriesViewModelProtocol {
