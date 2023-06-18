@@ -22,6 +22,7 @@ class GithubRepositoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewModel()
+        viewModel?.getRepositories()
     }
 }
 
