@@ -47,6 +47,25 @@ final class GithubRepositoriesViewModelUnitTests: XCTestCase {
         //Then
         XCTAssertEqual(state, .loaded(data: mockedResponse))
     }
+    
+    func testGetRepositories_OnFailure() {
+        //Given
+        var state: GithubRepositoriesScene.State?
+        useCase.shouldSucceed = false
+        
+        sut.states.subscribe { item in
+            state = item.element
+        }.disposed(by: disposeBag)
+        
+        //Current initial value should be loading
+        XCTAssertEqual(state, .loading)
+        
+        //When
+        sut.getRepositories()
+        
+        //Then
+        XCTAssertEqual(state, .error)
+    }
 }
 
 class GithubRepositoriesUseCaseSpy: GithubRepositoriesUseCaseProtocol {
