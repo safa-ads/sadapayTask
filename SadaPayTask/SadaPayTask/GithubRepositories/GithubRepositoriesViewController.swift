@@ -93,3 +93,10 @@ extension GithubRepositoriesViewController: UITableViewDataSource {
         }
     }
 }
+
+//MARK: - GithubRepositoriesErrorViewDelegate
+extension GithubRepositoriesViewController: GithubRepositoriesErrorViewDelegate {
+    func didTapRetry() {
+        viewModel?.getRepositories()
+    }
+}
