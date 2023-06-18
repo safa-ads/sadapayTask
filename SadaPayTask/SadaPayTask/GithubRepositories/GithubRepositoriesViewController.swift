@@ -31,28 +31,38 @@ class GithubRepositoriesViewController: UIViewController {
 //MARK: - Helpers
 private extension GithubRepositoriesViewController {
     func configureViewModel() {
-       viewModel?.states.observe(on: MainScheduler.instance).subscribe({ [weak self] state in
-           self?.state = state.element
-           
-           switch state.element! {
-           case .loading, .loaded:
-               self?.tableView.isHidden = false
-               self?.tableView.reloadData()
-           case .error:
-               self?.tableView.isHidden = true
-           }
-       }).disposed(by: disposeBag)
-       
-   }
+        viewModel?.states.observe(on: MainScheduler.instance).subscribe({ [weak self] state in
+            self?.state = state.element
+            
+            switch state.element! {
+            case .loading, .loaded:
+                self?.errorView?.removeFromSuperview()
+                self?.tableView.isHidden = false
+                self?.tableView.reloadData()
+            case .error:
+                self?.configureErrorView()
+                self?.tableView.isHidden = true
+            }
+        }).disposed(by: disposeBag)
+        
+    }
     
     func configureTableView() {
-            tableView.register(UINib(nibName: "GitHubRepositoriesTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GitHubRepositoriesTableViewCell.self))
-            
-            tableView.dataSource = self
-        }
-
+        tableView.register(UINib(nibName: "GitHubRepositoriesTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GitHubRepositoriesTableViewCell.self))
+        
+        tableView.dataSource = self
+    }
+    
     func setupNavigationControllerTitle() {
         self.title = "Trending"
+    }
+    
+    func configureErrorView() {
+        errorView = GithubRepositoriesErrorView()
+        view?.bringSubviewToFront(errorView!)
+        errorView?.delegate = self
+        view.addSubview(errorView!)
+        errorView!.pinToEdges(view)
     }
 }
 
