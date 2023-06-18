@@ -13,7 +13,7 @@ extension GitHubRepository {
     }
 }
 
-extension GitHubRepository.Items {
+extension GitHubRepository.Item {
     static func stub() -> Self {
         .init(language: "Python",
               stargazersCount: 5000,
@@ -23,7 +23,7 @@ extension GitHubRepository.Items {
     }
 }
 
-extension GitHubRepository.Items.Owner {
+extension GitHubRepository.Item.Owner {
     static func stub() -> Self {
         .init(avatarUrl: "https://photo.png",
               login: "Test owner name")

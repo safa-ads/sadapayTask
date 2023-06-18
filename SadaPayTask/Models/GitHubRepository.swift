@@ -6,9 +6,9 @@
 //
 
 public struct GitHubRepository: Codable {
-    let items: [Items]
+    let items: [Item]
     
-    public struct Items: Codable {
+    public struct Item: Codable {
         let language: String?
         let stargazersCount: Int?
         let name: String
