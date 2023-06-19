@@ -19,7 +19,8 @@ extension GitHubRepository.Item {
               stargazersCount: 5000,
               name: "Test name",
               description: "Test Description",
-              owner: .stub())
+              owner: .stub(),
+              languageColor: "")
     }
 }
 

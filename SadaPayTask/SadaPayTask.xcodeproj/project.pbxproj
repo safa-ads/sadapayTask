@@ -15,6 +15,9 @@
 		842329C02A3F725200145D57 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842329BF2A3F725200145D57 /* UIView+Constraints.swift */; };
 		842329C42A3F902D00145D57 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 842329C32A3F902D00145D57 /* RxSwift */; };
 		842329C62A3F96D200145D57 /* GithubRepositoriesViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842329C52A3F96D200145D57 /* GithubRepositoriesViewControllerUnitTests.swift */; };
+		842329CA2A3FD5FC00145D57 /* GithubColorCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 842329C82A3FD4E500145D57 /* GithubColorCodes.json */; };
+		842329D02A3FDC7200145D57 /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842329CE2A3FDBEB00145D57 /* JsonFileReader.swift */; };
+		842329D22A3FE3ED00145D57 /* String+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842329D12A3FE3ED00145D57 /* String+HexColor.swift */; };
 		847E4BF32A3B7C60003B646B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4BF22A3B7C60003B646B /* AppDelegate.swift */; };
 		847E4BF72A3B7C60003B646B /* GithubRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E4BF62A3B7C60003B646B /* GithubRepositoriesViewController.swift */; };
 		847E4BFA2A3B7C60003B646B /* GithubRepositoriesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E4BF82A3B7C60003B646B /* GithubRepositoriesViewController.storyboard */; };
@@ -73,6 +76,9 @@
 		842329BC2A3F6E4E00145D57 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		842329BF2A3F725200145D57 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		842329C52A3F96D200145D57 /* GithubRepositoriesViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		842329C82A3FD4E500145D57 /* GithubColorCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubColorCodes.json; sourceTree = "<group>"; };
+		842329CE2A3FDBEB00145D57 /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
+		842329D12A3FE3ED00145D57 /* String+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HexColor.swift"; sourceTree = "<group>"; };
 		847E4BEF2A3B7C60003B646B /* SadaPayTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPayTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847E4BF22A3B7C60003B646B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847E4BF62A3B7C60003B646B /* GithubRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesViewController.swift; sourceTree = "<group>"; };
@@ -138,12 +144,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		842329B52A3F6B4500145D57 /* LottieJson */ = {
+		842329B52A3F6B4500145D57 /* Json Files */ = {
 			isa = PBXGroup;
 			children = (
 				842329B42A3F6B3E00145D57 /* retry.json */,
+				842329C82A3FD4E500145D57 /* GithubColorCodes.json */,
 			);
-			path = LottieJson;
+			path = "Json Files";
 			sourceTree = "<group>";
 		};
 		842329B62A3F6C2500145D57 /* LottieAnimationView */ = {
@@ -163,15 +170,33 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		842329C72A3FD0B900145D57 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				84D839092A3CE89700B2322B /* GithubRepositoriesRepoTests.swift */,
+				84D8390B2A3CE8EE00B2322B /* RemoteDataSourceSpy.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		842329CD2A3FDBDB00145D57 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				842329CE2A3FDBEB00145D57 /* JsonFileReader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		847E4BE62A3B7C60003B646B = {
 			isa = PBXGroup;
 			children = (
 				847E4C272A3BA450003B646B /* CoreNetworking */,
 				847E4BF12A3B7C60003B646B /* SadaPayTask */,
 				847E4C262A3B7E01003B646B /* UseCase */,
+				842329CD2A3FDBDB00145D57 /* Helpers */,
 				847E4C252A3B7DFC003B646B /* Repo */,
 				84D839122A3CEC3E00B2322B /* APIs */,
-				842329B52A3F6B4500145D57 /* LottieJson */,
+				842329B52A3F6B4500145D57 /* Json Files */,
 				847E4C392A3C9D9E003B646B /* Models */,
 				847E4C0B2A3B7C63003B646B /* SadaPayTaskTests */,
 				847E4C152A3B7C63003B646B /* SadaPayTaskUITests */,
@@ -207,13 +232,11 @@
 		847E4C0B2A3B7C63003B646B /* SadaPayTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				842329C72A3FD0B900145D57 /* Repo */,
 				84D839252A3E6D7700B2322B /* Scene */,
 				84D8391C2A3CF0D100B2322B /* UseCase */,
 				84D8390D2A3CE9E300B2322B /* Stubs */,
-				84D8391F2A3CF57100B2322B /* TestingErrors.swift */,
 				847E4C0C2A3B7C63003B646B /* SadaPayTaskTests.swift */,
-				84D839092A3CE89700B2322B /* GithubRepositoriesRepoTests.swift */,
-				84D8390B2A3CE8EE00B2322B /* RemoteDataSourceSpy.swift */,
 			);
 			path = SadaPayTaskTests;
 			sourceTree = "<group>";
@@ -269,6 +292,7 @@
 			children = (
 				84C885522A3F5AE800FE86D7 /* UIView+Corners.swift */,
 				842329BF2A3F725200145D57 /* UIView+Constraints.swift */,
+				842329D12A3FE3ED00145D57 /* String+HexColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +300,7 @@
 		84D8390D2A3CE9E300B2322B /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				84D8391F2A3CF57100B2322B /* TestingErrors.swift */,
 				84D8390E2A3CE9FC00B2322B /* GithubRepository+Stub.swift */,
 			);
 			path = Stubs;
@@ -446,6 +471,7 @@
 			files = (
 				847E4C022A3B7C62003B646B /* LaunchScreen.storyboard in Resources */,
 				842329BB2A3F6E3D00145D57 /* GithubRepositoriesErrorView.xib in Resources */,
+				842329CA2A3FD5FC00145D57 /* GithubColorCodes.json in Resources */,
 				847E4BFF2A3B7C62003B646B /* Assets.xcassets in Resources */,
 				84D8392C2A3E777F00B2322B /* GitHubRepositoriesTableViewCell.xib in Resources */,
 				847E4BFA2A3B7C60003B646B /* GithubRepositoriesViewController.storyboard in Resources */,
@@ -482,6 +508,7 @@
 				84D8391B2A3CF09000B2322B /* GithubRepositoriesUseCase.swift in Sources */,
 				847E4C342A3BB0D8003B646B /* GithubRepositoriesRepo.swift in Sources */,
 				84D839162A3CECE300B2322B /* EndpointProtocol.swift in Sources */,
+				842329D22A3FE3ED00145D57 /* String+HexColor.swift in Sources */,
 				847E4C302A3BB0A2003B646B /* RemoteDataSource.swift in Sources */,
 				84D839182A3CEE0700B2322B /* GithubRepositoryEndpoint.swift in Sources */,
 				847E4C322A3BB0AF003B646B /* BaseRepo.swift in Sources */,
@@ -493,6 +520,7 @@
 				847E4BFD2A3B7C60003B646B /* SadaPayTask.xcdatamodeld in Sources */,
 				84C885532A3F5AE800FE86D7 /* UIView+Corners.swift in Sources */,
 				847E4C2A2A3BA4B0003B646B /* CustomDecoder.swift in Sources */,
+				842329D02A3FDC7200145D57 /* JsonFileReader.swift in Sources */,
 				847E4C2C2A3BA4D2003B646B /* RestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
