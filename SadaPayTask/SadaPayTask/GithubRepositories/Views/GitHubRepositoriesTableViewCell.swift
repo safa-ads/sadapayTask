@@ -54,26 +54,21 @@ class GitHubRepositoriesTableViewCell: UITableViewCell {
         personalNameLabel.text = model.owner.login
         repositoryNameLabel.text = model.name
         repositoryDescriptionLabel.text = model.description
-
-        if let language = model.language {
-            languageLabel.text = language
-        }
-
-        else {
-            languageParentView.isHidden = true
-        }
-        if let stargazerCounts = model.stargazersCount {
-            starCount.text = String(stargazerCounts)
-            starImageView.tintColor = .orange
-        } else {
-            stargazerCountsView.isHidden = true
-        }
-       
+        
+        languageParentView.isHidden = model.language == nil
+        languageLabel.text = model.language
+        languageView.backgroundColor = model.languageColor?.toHexColor()
+        
+        stargazerCountsView.isHidden = model.stargazersCount == nil
+        
+        starCount.text = String(model.stargazersCount ?? -1)
+        starImageView.tintColor = .orange
+        
     }
     
     private func configureRoundedCorners() {
         profileImageView.roundCorners(radius: profileImageView.frame.height / 2)
         languageView.roundCorners(radius: languageView.frame.height / 2)
-
+        
     }
 }

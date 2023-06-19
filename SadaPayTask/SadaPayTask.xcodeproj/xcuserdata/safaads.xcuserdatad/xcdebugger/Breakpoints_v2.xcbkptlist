@@ -14,41 +14,9 @@
             filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "awakeFromNib()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E48DF199-4098-4B93-9087-19961A39D038"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "init?(coder:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A7F5208E-C1F8-4F13-BB4B-1CAAD4CD6CC8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "init(frame:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -165,16 +133,110 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "57C970A1-B53E-4BB7-96F2-AFFFA43E854E"
+            uuid = "549044C2-2C60-4A61-962D-7AAEAFFDE623"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "didTapRetry(_:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "configureButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3274E786-7403-4609-A00A-F9C17395B906"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "GithubRepositoriesErrorView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3274E786-7403-4609-A00A-F9C17395B906 - 3196452e345366fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SadaPayTask.GithubRepositoriesErrorView.__allocating_init(frame: __C.CGRect) -&gt; SadaPayTask.GithubRepositoriesErrorView"
+                  moduleName = "SadaPayTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/safaads/Desktop/SadaPayTask/sadapayTask/SadaPayTask/SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "3274E786-7403-4609-A00A-F9C17395B906 - f09257b6ee6a4247"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SadaPayTask.GithubRepositoriesErrorView.init(frame: __C.CGRect) -&gt; SadaPayTask.GithubRepositoriesErrorView"
+                  moduleName = "SadaPayTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/safaads/Desktop/SadaPayTask/sadapayTask/SadaPayTask/SadaPayTask/GithubRepositories/Views/LottieAnimationView/GithubRepositoriesErrorView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D06A5146-383D-4061-8631-6760AC37E55D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreNetworking/CustomDecoder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FD9AFEC-C0E1-4656-8CD0-C5F47106E9A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreNetworking/CustomDecoder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "decoder(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "689D59AF-EA89-416D-80F0-85C8231066EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UseCase/GithubRepositoriesUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getRepositories(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
